@@ -31,6 +31,7 @@ function extractNames(file){
 function orderAlph(arr){
   arr.sort() //try to implement this function by myself
 }
+//returns array with numeric values for each name, by adding up the values of letters a=1, b=2, c=3....z=26
 function alphValues(arr, dic){
   let values = []
   for (name of arr){
@@ -43,7 +44,7 @@ function alphValues(arr, dic){
   }
   return values
 }
-
+//return array with scores for names. name score = alphabetical_value * position_in_list
 function nameScores(alphValArray){
   let res = []
   for (i in alphValArray){
@@ -55,6 +56,7 @@ function nameScores(alphValArray){
   return res
 }
 
+//Sum all the name scores
 function addAll(arr){
   total = 0
   for (let num of arr){
@@ -62,7 +64,3 @@ function addAll(arr){
   }
   return total
 }
-
-//name score = alphabetical value * oder in list
-
-//Sum all the name scores
