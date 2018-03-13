@@ -14,7 +14,6 @@ fs.readFile('./p022_names.txt', (err, data) => {
   orderAlph(nameArray);
   let alphValsArr = alphValues(nameArray, dict);
   let scoreArr = nameScores(alphValsArr)
-  console.log(addAll(scoreArr))
 })
 
 
